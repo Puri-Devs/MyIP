@@ -10,14 +10,8 @@
   <body>
     <script>
       $.getJSON("https://api.my-ip.io/ip.json", function( data ) {
-        $("#text").html(data);
+        $("#text").html(data.ip);
       });
-
-      /*readTextFile("https://api.my-ip.io/ip.json", function(text){
-        var data = JSON.parse(text);
-        console.log(data);
-        document.getElementById('text').innerHTML += data.ip;
-      });*/
     </script>
 
     <div class="logo">
