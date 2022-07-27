@@ -12,7 +12,6 @@
       $.getJSON("https://api.my-ip.io/ip.json", function( data ) {
         txt = $("#text").text();
         out = txt + data.ip
-        $("#text").text("");
         $("#text").html(out);
       });
     </script>
